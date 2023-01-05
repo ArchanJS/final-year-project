@@ -47,7 +47,7 @@ import * as functions from '../functions/functions';
     const handleSearch=async()=>{
         try {
             const res=await functions.searchVehicle(vehicleNo,token);
-            if(res.length===0) alert("No past record found!");
+            if(res.length===0) alert("No record found!");
             else {
                 searchVehicleAction(res);
                 navigate('/search');
